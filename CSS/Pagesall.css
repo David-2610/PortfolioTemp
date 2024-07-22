@@ -1,0 +1,94 @@
+/* -------------------------------------ALL WEBSITE-------------------------------------- */
+* {
+    --lapis-lazuli: #22577aff;
+    --verdigris: #38a3a5ff;
+    --emerald: #57cc99ff;
+    --light-green: #80ed99;
+    --tea-green: #c7f9ccff;
+    --space-cadet: #2b2d42ff;
+    --cool-gray: #8d99aeff;
+    --antiflash-white: #edf2f4;
+    --red-pantone: #ef233cff;
+    --fire-engine-red: #d90429ff;
+    --rich-black: #000814;
+    --oxford-blue: #001d3dff;
+    --yale-blue: #003566ff;
+    --mikado-yellow: #ffc300ff;
+    --gold: #ffd60aff;
+    --navback: rgba(255, 255, 255, 0.11);
+    background-color: var(--rich-black);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins",sans-serif ;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    #navlogo {
+      display: none;
+    }
+  }
+  p {
+    color: var(--antiflash-white);
+    margin: auto;
+  }
+  /* ---------------------------------------------------------------------------------------- */
+  /*--------------------------------- NAVIGATION BAR----------------------------------------- */
+  header {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #navlogo {
+    height: 30px;
+    grid-column: 1;
+    background: none;
+    filter: invert() drop-shadow(0px 0px 3px rgb(255, 255, 255));
+  }
+  
+  nav {
+    width: 350px;
+    height: 35px;
+    background-color: var(--navback);
+    border-radius: 40px;
+    color: var(--antiflash-white);
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div .navbutton {
+    width: 70px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+  div .navbutton:hover {
+    width: 70px;
+    background-color: var(--navback);
+    font-size: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+  }
+  
+  .navlink {
+    padding: 5px;
+    text-decoration: none;
+    background: none;
+    color: var(--antiflash-white);
+  }
+  /* ---------------------------------------------------------------------------------------- */
+  /* ---------------------------------------HEADINGS---------------------------------------- */
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--antiflash-white);
+  }
+  /* ---------------------------------------------------------------------------------------- */

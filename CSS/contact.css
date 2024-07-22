@@ -1,0 +1,25 @@
+/* -------------------COLOURS------------------------ */
+* {
+    --lapis-lazuli: #22577aff;
+    --verdigris: #38a3a5ff;
+    --emerald: #57cc99ff;
+    --light-green: #80ed99;
+    --tea-green: #c7f9ccff;
+    --space-cadet: #2b2d42ff;
+    --cool-gray: #8d99aeff;
+    --antiflash-white: #edf2f4;
+    --red-pantone: #ef233cff;
+    --fire-engine-red: #d90429ff;
+    --rich-black: #000814;
+    --oxford-blue: #001d3dff;
+    --yale-blue: #003566ff;
+    --mikado-yellow: #ffc300ff;
+    --gold: #ffd60aff;
+    --navback: rgba(255, 255, 255, 0.11);
+}
+/* ----------------------------------------------------------------- */
+/* --------------------------TEST CSS-------------------------------- */
+#nav5{
+    border-radius: 40px;
+background-color:var(--navback) ;
+}
