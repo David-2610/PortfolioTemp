@@ -143,3 +143,25 @@ div .navbutton:hover {
   }
 }
 /* ---------------------------------------------------------------------------------------- */
+/* ----------------------------------------------SOCIAL MEDIA------------------------------------------ */
+div.Sociallinks{
+  width: 45px;
+  border-radius: 3px;
+  background-color: white;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30%;
+  right:-5px;
+}
+.socialogo{
+  background:transparent;
+  height:30px;
+  margin: 10px;
+}
+.solinks{
+  background: none;
+}
+/* ---------------------------------------------------------------------------------------- */
