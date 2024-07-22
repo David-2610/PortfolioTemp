@@ -122,25 +122,24 @@ div .navbutton:hover {
   margin: 5px auto;
   display: flex;
   justify-content: center;
-  width: 80vw;
-  left: -15%;
+  width: 90vw;
   position: absolute;
-  animation: logomove 5s linear 1s infinite;
+  animation: logomove 10s linear 1s infinite;
   animation-direction: alternate;
 }
 .logos {
   background: transparent;
-  filter: grayscale() brightness(10);
+  filter:invert() brightness(0.6);
   margin: 0px 60px;
   height: 40px;
   width: 40px;
 }
 @keyframes logomove {
   from {
-    left: -15%;
+    left: -50%;
   }
   to {
-    left: 20%;
+    left: 50%;
   }
 }
 /* ---------------------------------------------------------------------------------------- */
