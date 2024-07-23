@@ -1,40 +1,96 @@
 /* -------------------------------------ALL WEBSITE-------------------------------------- */
 * {
-    --lapis-lazuli: #22577aff;
-    --verdigris: #38a3a5ff;
-    --emerald: #57cc99ff;
-    --light-green: #80ed99;
-    --tea-green: #c7f9ccff;
-    --space-cadet: #2b2d42ff;
-    --cool-gray: #8d99aeff;
-    --antiflash-white: #edf2f4;
-    --red-pantone: #ef233cff;
-    --fire-engine-red: #d90429ff;
-    --rich-black: #000814;
-    --oxford-blue: #001d3dff;
-    --yale-blue: #003566ff;
-    --mikado-yellow: #ffc300ff;
-    --gold: #ffd60aff;
-    --navback: rgba(255, 255, 255, 0.11);
-    background-color: var(--rich-black);
-    margin: 0px;
-    padding: 0px;
-    font-family: "Poppins",sans-serif ;
-    font-weight: 400;
-    font-style: normal;
+  --lapis-lazuli: #22577aff;
+  --verdigris: #38a3a5ff;
+  --emerald: #57cc99ff;
+  --light-green: #80ed99;
+  --tea-green: #c7f9ccff;
+  --space-cadet: #2b2d42ff;
+  --cool-gray: #8d99aeff;
+  --antiflash-white: #edf2f4;
+  --red-pantone: #ef233cff;
+  --fire-engine-red: #d90429ff;
+  --rich-black: rgb(21,21,30);
+  --oxford-blue: #001d3dff;
+  --yale-blue: #003566ff;
+  --mikado-yellow: #ffc300ff;
+  --gold: #ffd60aff;
+  --navback: rgba(255, 255, 255, 0.11);
+  background-color: var(--rich-black);
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif, s;
+  font-weight: 400;
+  font-style: normal;
+
+
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:var(--cool-gray); 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--cool-gray); 
   }
   
-  @media only screen and (max-width: 700px) {
-    #navlogo {
-      display: none;
-    }
+  /* ------------------------------------------------------------- */
+
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 10px;
   }
-  p {
-    color: var(--antiflash-white);
-    margin: auto;
-    width: 80vw;
-    text-align: center;
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
   }
+  ::-webkit-scrollbar-thumb {
+    background:var(--cool-gray); 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--cool-gray); 
+  }
+}
+  
+  /* ------------------------------------------------------------- */
+.links{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: none;
+}
+.links:visited{ 
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: none;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 700px) {
+  #navlogo {
+    display: none;
+  }
+}
+p {
+  color: var(--antiflash-white);
+  margin: auto;
+  width: 80vw;
+  text-align: center;
+}
+.p {
+  font-size: 1em;
+  font-weight: 400;
+  background: none;
+}
   /* ---------------------------------------------------------------------------------------- */
   /*--------------------------------- NAVIGATION BAR----------------------------------------- */
   header {
@@ -89,31 +145,21 @@
   /* ---------------------------------------------------------------------------------------- */
   /* ---------------------------------------HEADINGS---------------------------------------- */
   h1{
+    background:none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start; 
+    margin:20px 0px ;
+     padding: 40px ;
     color: var(--antiflash-white);
   }
   /* ---------------------------------------------------------------------------------------- */
-  /* ----------------------------------------------SOCIAL MEDIA------------------------------------------ */
-div.Sociallinks{
-  width: 45px;
-  border-radius: 3px;
-  background-color: white;
-  display: flex;
-  flex-direction:column ;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 30%;
-  right:-5px;
-}
-.socialogo{
-  background:transparent;
-  height:30px;
-  margin: 10px;
-}
-.solinks{
-  background: none;
+/* ----------------------------------RIGHTS------------------------------------------------------ */
+.Rights{
+  background-color: #000000;
+  color:white;
+  padding:2em;
+  width: 100vw;
+  position:relative;
+  bottom: 0%;
 }
 /* ---------------------------------------------------------------------------------------- */

@@ -10,7 +10,7 @@
   --antiflash-white: #edf2f4;
   --red-pantone: #ef233cff;
   --fire-engine-red: #d90429ff;
-  --rich-black: #000814;
+  --rich-black: rgb(21,21,30);
   --oxford-blue: #001d3dff;
   --yale-blue: #003566ff;
   --mikado-yellow: #ffc300ff;
@@ -19,11 +19,44 @@
   background-color: var(--rich-black);
   margin: 0px;
   padding: 0px;
-  font-family: "Poppins",sans-serif,s ;
+  font-family: "Poppins", sans-serif, s;
   font-weight: 400;
   font-style: normal;
-}
+  /* ------------------------------------------------------------- */
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:var(--cool-gray); 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--cool-gray); 
+  }
+  
+  /* ------------------------------------------------------------- */
 
+}
+.links{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: none;
+}
+.links:visited{ 
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: none;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 700px) {
   #navlogo {
     display: none;
@@ -35,6 +68,9 @@ p {
   width: 80vw;
   text-align: center;
 }
+
+
+
 /* ---------------------------------------------------------------------------------------- */
 /*--------------------------------- NAVIGATION BAR----------------------------------------- */
 header {
@@ -120,8 +156,6 @@ div .navbutton:hover {
 }
 .contain {
   margin: 5px auto;
-  display: flex;
-  justify-content: center;
   width: 90vw;
   position: absolute;
   animation: logomove 10s linear 1s infinite;
@@ -129,7 +163,7 @@ div .navbutton:hover {
 }
 .logos {
   background: transparent;
-  filter:invert() brightness(0.6);
+  filter: invert() brightness(0.6);
   margin: 0px 60px;
   height: 40px;
   width: 40px;
@@ -143,25 +177,76 @@ div .navbutton:hover {
   }
 }
 /* ---------------------------------------------------------------------------------------- */
-/* ----------------------------------------------SOCIAL MEDIA------------------------------------------ */
-div.Sociallinks{
-  width: 45px;
-  border-radius: 3px;
-  background-color: white;
+/* ----------------------------------------- CONTACT ME----------------------------------------------- */
+.contactme {
+  margin: 10px auto;
+  width: 800px;
   display: flex;
-  flex-direction:column ;
-  justify-content: center;
+  background-image: linear-gradient(to left, var(--emerald),var(--lapis-lazuli));
+  padding: 30px;
+  border-radius: 10px;
   align-items: center;
-  position: fixed;
-  top: 30%;
-  right:-5px;
+  justify-content: space-around;
 }
-.socialogo{
-  background:transparent;
-  height:30px;
-  margin: 10px;
-}
-.solinks{
+.context {
+  display: flex;
+  flex-direction: column;
+  color: var(--antiflash-white);
   background: none;
+  width: 70%;
+}
+.conbut {
+  padding:5px;
+    width:fit-content;
+  border-radius: 2em;
+  background-color: #000000;
+  display: flex;
+
+  flex-direction: row;
+}
+.h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  background: transparent;
+}
+.p {
+  font-size: 1em;
+  font-weight: 400;
+  background: none;
+}
+#arrow {
+  margin: 5px ;
+    width: fit-content;
+  height: 1em;
+  background: none;
+}
+
+/* ------------------------------------ABOUT---------------------------------------------------- */
+.about {
+  margin: auto;
+  width:80vw;
+  margin-bottom: 30px;
+}
+.about > h5 {
+  margin-left: 30px;
+  color: #fff;
+}
+.about h4,
+.about h5 {
+  margin-bottom: 30px;
+}
+.about > p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* ----------------------------------RIGHTS------------------------------------------------------ */
+.Rights{
+  background-color: #000000;
+  color:white;
+  padding:2em;
+  width: 100vw;
+  position:relative;
+  bottom: 0%;
 }
 /* ---------------------------------------------------------------------------------------- */
